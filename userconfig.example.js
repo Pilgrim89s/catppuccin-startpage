@@ -10,17 +10,18 @@ let palette = initThemeSystem(preferredLightTheme, preferredDarkTheme);
 const default_configuration = {
   overrideStorage: true,
   temperature: {
-    location: "London",
+    location: "Stralsund",
     scale: "C",
   },
   clock: {
-    format: "k:i p",
+    label: "Stralsund", // Label fuer die Uhr
+    format: "h:i p",
     icon_color: palette.maroon,
   },
   additionalClocks: [
     {
       label: "UA",
-      timezone: "Europe/Kyiv",
+      timezone: "Europe/Berlin",
       format: "h:i",
       icon_color: palette.peach,
     },
@@ -43,7 +44,7 @@ const default_configuration = {
   openLastVisitedTab: true,
   tabs: [
     {
-      name: "myself",
+      name: "Home",
       background_url: "src/img/banners/banner_09.gif",
       categories: [
         {
@@ -67,15 +68,15 @@ const default_configuration = {
           name: "workspace",
           links: [
             {
-              name: "gmail",
-              url: "https://mail.google.com",
+              name: "Familywall",
+              url: "https://www.familywall.com/events.php",
               icon: "brand-gmail",
-              icon_color: palette.green,
+              //icon_color: palette.green,
             },
             {
               name: "calendar",
               url: "https://calendar.google.com",
-              icon: "calendar-filled",
+              icon: "calendar-account",
               icon_color: palette.peach,
             },
             {
