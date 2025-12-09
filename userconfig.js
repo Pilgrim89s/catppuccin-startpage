@@ -8,6 +8,7 @@ const preferredDarkTheme = mocha;
 let palette = initThemeSystem(preferredLightTheme, preferredDarkTheme);
 
 const default_configuration = {
+  localFonts: true,
   overrideStorage: true,
   temperature: {
     location: "Stralsund",
@@ -18,14 +19,6 @@ const default_configuration = {
     format: "h:i p",
     icon_color: palette.maroon,
   },
-  additionalClocks: [
-    {
-      label: "UA",
-      timezone: "Europe/Berlin",
-      format: "h:i",
-      icon_color: palette.peach,
-    },
-  ],
   search: {
     engines: {
       p: ["https://www.perplexity.ai/search/?q=", "PerplexityAI"],
